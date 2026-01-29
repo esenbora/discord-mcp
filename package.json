@@ -1,0 +1,54 @@
+{
+  "name": "discord-mcp",
+  "version": "1.0.0",
+  "description": "Discord MCP server for Claude Code - Control Discord bots via Model Context Protocol",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "discord-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "dev": "tsup src/index.ts --format esm --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "discord",
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "anthropic",
+    "bot",
+    "discord-bot",
+    "ai"
+  ],
+  "author": "Bora Esen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boraesen/discord-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/boraesen/discord-mcp/issues"
+  },
+  "homepage": "https://github.com/boraesen/discord-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "discord.js": "^14.14.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
