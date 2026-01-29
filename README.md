@@ -1,6 +1,19 @@
 # Discord MCP Server
 
+[![npm version](https://badge.fury.io/js/@buzzicra%2Fdiscord-mcp.svg)](https://www.npmjs.com/package/@buzzicra/discord-mcp)
+
 A Model Context Protocol (MCP) server that exposes Discord bot capabilities to Claude.
+
+## Installation
+
+```bash
+npm install -g @buzzicra/discord-mcp
+```
+
+Or use directly with npx:
+```bash
+npx @buzzicra/discord-mcp
+```
 
 ## Features
 
